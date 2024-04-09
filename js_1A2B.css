@@ -1,0 +1,244 @@
+/* 網頁大小&主顯示區:*/
+
+/* 底部物件 */
+
+/* 說明欄&控制鈕 */
+
+/* 網頁大小 */
+
+body {
+    background-color: #474747;
+    width: 1230px;
+    height: 600px;
+}
+
+/* 主顯示區 */
+
+#main {
+    border: solid 3px gray;
+    margin: 10px 10px;
+    float: left;
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+
+/* 遊戲區表格 */
+
+#table {
+    border-radius: 12px;
+    display: table;
+    margin: 3% auto 2% 22px;
+    background-image: url(./jpg/Boxv2.jpg);
+    background-size: cover;
+}
+
+/* X軸 */
+
+.tr {
+    line-height: 13px;
+    text-align: center;
+    vertical-align: 10px;
+    display: table-row;
+}
+
+/* Y軸 */
+
+.td {
+    display: table-cell;
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+}
+
+/* 檢查結果 */
+
+.return {
+    flex-direction: column;
+    width: 70px;
+    height: 50px;
+}
+
+/* 檢查燈號 */
+.returnLight{
+    position: relative;
+    top: 5px;
+    left: 2px;
+    width: 15px;
+    height: 15px;
+    border-radius: 99em;
+    border:1px solid gray;
+    background-color: black;
+}
+
+/* 遊戲區 */
+
+.fill {
+    position: relative;
+    top: 2px;
+    left: 1px;
+    background-color: black;
+    border-radius: 99em;
+    width: 35px;
+    height: 35px;
+    border: 3px solid gray;
+    margin: 10px auto 10px 17px;
+}
+
+/* 檢查鈕 */
+
+.check {
+    width: 50px;
+    height: 35px;
+    border: solid 2px;
+    border-radius: 8px;
+}
+
+.check:hover {
+    border-radius: 10px;
+    background-color: darkgray;
+}
+
+/* 說明欄表格 */
+
+table {
+    border-collapse: collapse;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+}
+
+th {
+    padding: unset;
+    width: 540px;
+    height: 50px;
+}
+
+td {
+    padding: unset;
+    width: 60px;
+    height: 60px;
+}
+
+/* 答案蓋子 */
+
+.ansBox {
+    background-size: cover;
+    background-color: #585858;
+    align-items: center;
+    position: relative;
+    margin: 2px;
+}
+
+/* 答案蓋子-圖 */
+
+.mask {
+    top: 5px;
+    position: absolute;
+    z-index: 2;
+}
+
+/* 答案球 */
+
+.ansBall {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    border-width: 2px;
+    border-style: solid;
+    z-index: 0;
+    border-radius: 90em;
+}
+
+/* 文字格式 */
+
+p {
+    color: honeydew;
+    text-indent: 60px;
+    font-size: 18px;
+    line-height: 8px;
+}
+
+h3 {
+    color: honeydew;
+    line-height: 10px;
+    text-indent: 20px;
+}
+
+h5 {
+    color: honeydew;
+    font-size: 6px;
+    line-height: 13px;
+}
+
+/* 說明欄控制鈕外型 */
+
+.ctrl {
+    width: 130px;
+    height: 35px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    bottom: 10px;
+    position: absolute;
+}
+
+.ctrl:hover {
+    border-radius: 10px;
+    background-color: darkgray;
+}
+
+/* 按鈕位置 */
+
+#start {
+    bottom: 5%;
+    right: 38%;
+}
+
+#giveUp {
+    bottom: 5%;
+    right: 23%;
+}
+
+#retry {
+    bottom: 5%;
+    right: 8%;
+}
+
+/* 底部物件區 */
+
+#footer {
+    position: relative;
+    clear: both;
+    height: 30%;
+}
+
+/* 顏色選擇 */
+
+#ballBox {
+    background-image: url(./jpg/ballbox.jpg);
+    position: absolute;
+    background-color: burlywood;
+    width: 520px;
+    height: 80px;
+    text-align: center;
+    flex-direction: row;
+    top: 40px;
+    left: 40px;
+}
+
+.pick {
+    width: 56px;
+    height: 56px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 99em;
+    margin: 12px 10px;
+}
+
+.pick:hover {
+    border-radius: 90em;
+    border-color: black;
+}

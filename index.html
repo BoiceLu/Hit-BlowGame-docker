@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TTT Midterm <Project-js_1A2B></Project-js_1A2B></title>
+        <link rel="stylesheet" href="js_1A2B.css">
+
+</head>
+
+<body>
+
+        <!-- 主顯示區 -->
+        <!-- 8*6格子 -->
+        <!-- 一 狀態 -->
+        <!-- 二~五 可填入 -->
+        <!-- 六 用check button 抓2~5值 -->
+
+        <div id='main'>
+                <div id='table'>
+                        <div class='tr'>
+                                <div class='td return'>
+                                        <button class='returnLight'></button>
+                                        <button class='returnLight'></button><br>
+                                        <button class='returnLight'></button>
+                                        <button class='returnLight'></button>
+                                </div>
+                                <div class='td return'>
+                                        <button class='returnLight'></button>
+                                        <button class='returnLight'></button><br>
+                                        <button class='returnLight'></button>
+                                        <button class='returnLight'></button>
+                                </div>
+                                <div class='td return'>
+                                        <button class='returnLight'></button>
+                                        <button class='returnLight'></button><br>
+                                        <button class='returnLight'></button>
+                                        <button class='returnLight'></button>
+                                </div>
+                                <div class='td return'>
+                                        <button class='returnLight'></button>
+                                        <button class='returnLight'></button><br>
+                                        <button class='returnLight'></button>
+                                        <button class='returnLight'></button>
+                                </div>
+                                <div class='td return'>
+                                        <button class='returnLight'></button>
+                                        <button class='returnLight'></button><br>
+                                        <button class='returnLight'></button>
+                                        <button class='returnLight'></button>
+                                </div>
+                                <div class='td return'>
+                                        <button class='returnLight'></button>
+                                        <button class='returnLight'></button><br>
+                                        <button class='returnLight'></button>
+                                        <button class='returnLight'></button>
+                                </div>
+                                <div class='td return'>
+                                        <button class='returnLight'></button>
+                                        <button class='returnLight'></button><br>
+                                        <button class='returnLight'></button>
+                                        <button class='returnLight'></button>
+                                </div>
+                                <div class='td return'>
+                                        <button class='returnLight'></button>
+                                        <button class='returnLight'></button><br>
+                                        <button class='returnLight'></button>
+                                        <button class='returnLight'></button>
+                                </div>
+                        </div>
+                        <div class='td'>
+                                <div class='tr'><button class='fill round1'></button></div>
+                                <div class='tr'><button class='fill round1'></button></div>
+                                <div class='tr'><button class='fill round1'></button></div>
+                                <div class='tr'><button class='fill round1'></button></div>
+                        </div>
+                        <div class='td'>
+                                <div class='tr'><button class='fill round2'></button></div>
+                                <div class='tr'><button class='fill round2'></button></div>
+                                <div class='tr'><button class='fill round2'></button></div>
+                                <div class='tr'><button class='fill round2'></button></div>
+                        </div>
+                        <div class='td'>
+                                <div class='tr'><button class='fill round3'></button></div>
+                                <div class='tr'><button class='fill round3'></button></div>
+                                <div class='tr'><button class='fill round3'></button></div>
+                                <div class='tr'><button class='fill round3'></button></div>
+                        </div>
+                        <div class='td'>
+                                <div class='tr'><button class='fill round4'></button></div>
+                                <div class='tr'><button class='fill round4'></button></div>
+                                <div class='tr'><button class='fill round4'></button></div>
+                                <div class='tr'><button class='fill round4'></button></div>
+                        </div>
+                        <div class='td'>
+                                <div class='tr'><button class='fill round5'></button></div>
+                                <div class='tr'><button class='fill round5'></button></div>
+                                <div class='tr'><button class='fill round5'></button></div>
+                                <div class='tr'><button class='fill round5'></button></div>
+                        </div>
+                        <div class='td'>
+                                <div class='tr'><button class='fill round6'></button></div>
+                                <div class='tr'><button class='fill round6'></button></div>
+                                <div class='tr'><button class='fill round6'></button></div>
+                                <div class='tr'><button class='fill round6'></button></div>
+                        </div>
+                        <div class='td'>
+                                <div class='tr'><button class='fill round7'></button></div>
+                                <div class='tr'><button class='fill round7'></button></div>
+                                <div class='tr'><button class='fill round7'></button></div>
+                                <div class='tr'><button class='fill round7'></button></div>
+                        </div>
+                        <div class='td'>
+                                <div class='tr'><button class='fill round8'></button></div>
+                                <div class='tr'><button class='fill round8'></button></div>
+                                <div class='tr'><button class='fill round8'></button></div>
+                                <div class='tr'><button class='fill round8'></button></div>
+                        </div>
+
+
+                        <div class='tr'>
+                                <div class='td'><button class='check round1' onclick='checkBtn(1)'>Check</button></div>
+                                <div class='td'><button class='check round2' onclick='checkBtn(2)'>Check</button></div>
+                                <div class='td'><button class='check round3' onclick='checkBtn(3)'>Check</button></div>
+                                <div class='td'><button class='check round4' onclick='checkBtn(4)'>Check</button></div>
+                                <div class='td'><button class='check round5' onclick='checkBtn(5)'>Check</button></div>
+                                <div class='td'><button class='check round6' onclick='checkBtn(6)'>Check</button></div>
+                                <div class='td'><button class='check round7' onclick='checkBtn(7)'>Check</button></div>
+                                <div class='td'><button class='check round8' onclick='checkBtn(8)'>Check</button></div>
+                        </div>
+                </div>
+                <!--答案區 -->
+                <!--六取四不可重複 -->
+                <table>
+                        <tr>
+                                <th colspan="9">
+                                        <h4 style="text-align: left;">Answer</h4>
+                                </th>
+                        </tr>
+                        <tr>
+                                <td class='ansBox'>
+                                        <img class="mask" src="./jpg/mask1.jpg">
+                                        <button class="ansBall"></button>
+                                </td>
+                                <td colspan="8" rowspan='4'>
+                                        <h3>遊戲說明:</h3>
+                                        <p>選取顏色填入格子</p>
+                                        <p>完全猜中即獲得勝利</p>
+                                        <p>檢查欄</p>
+                                        <p>&nbsp&nbsp紅色:猜中位置&顏色</p>
+                                        <p>&nbsp&nbsp黃色:猜中顏色位置不對</p>
+                                        <p>*Give Up 公布答案</p>
+                                        <p>*retry 重開一局</p>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class='ansBox'>
+                                        <img class="mask" src="./jpg/mask2.jpg">
+                                        <button class="ansBall"></button>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class='ansBox'>
+                                        <img class="mask" src="./jpg/mask2.jpg">
+                                        <button class="ansBall"></button>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class='ansBox'>
+                                        <img class="mask" src="./jpg/mask3.jpg">
+                                        <button class="ansBall"></button>
+                                </td>
+                        </tr>
+                </table>
+
+                <!-- start & retry & giveup按鈕 -->
+                <button class='ctrl round0' id='start' onclick="checkBtn(0)">Start</button>
+                <button class='ctrl' id='giveUp' onclick="control(10)">GiveUp</button>
+                <button class='ctrl' id='retry' onclick="control(12)">Retry</button>
+        </div>
+
+        <!-- 物件區 -->
+        <!-- 六種顏色選擇 紅1橙2黃3綠4藍5白6 -->
+        <div id='footer'>
+                <div id='ballBox'>
+                        <!-- <h2>請選擇顏色:</h2> -->
+                        <button class='pick' onclick="choiceColor(0)" style="background-color:red;"></button>
+                        <button class='pick' onclick="choiceColor(1)" style="background-color:orange;"></button>
+                        <button class='pick' onclick="choiceColor(2)" style="background-color:yellow;"></button>
+                        <button class='pick' onclick="choiceColor(3)" style="background-color:green;"></button>
+                        <button class='pick' onclick="choiceColor(4)" style="background-color:white;"></button>
+                        <button class='pick' onclick="choiceColor(5)" style="background-color:blue;"></button>
+                </div>
+        </div>
+        <script src="js_1A2B.js"></script>
+</body>
+
+</html>
